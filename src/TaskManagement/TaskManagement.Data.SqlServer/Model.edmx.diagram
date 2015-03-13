@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dcba81ea789e484e8cae543b698c6e98" Name="Diagram1">
+        <EntityTypeShape EntityType="TaskManagementDBModel.Category" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagementDBModel.Priority" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagementDBModel.Status" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagementDBModel.Task" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagementDBModel.TaskUser" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="TaskManagementDBModel.FK__tbl_task__idPrio__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskManagementDBModel.FK_TaskUser_" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskManagementDBModel.tbl_TaskCategory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

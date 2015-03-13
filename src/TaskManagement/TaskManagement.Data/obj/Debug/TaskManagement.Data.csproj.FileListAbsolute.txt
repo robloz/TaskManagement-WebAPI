@@ -1,0 +1,4 @@
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data\bin\Debug\TaskManagement.Data.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data\bin\Debug\TaskManagement.Data.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data\obj\Debug\TaskManagement.Data.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data\obj\Debug\TaskManagement.Data.pdb

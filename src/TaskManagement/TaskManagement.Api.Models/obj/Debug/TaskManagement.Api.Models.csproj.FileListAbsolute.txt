@@ -1,0 +1,4 @@
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Api.Models\bin\Debug\TaskManagement.Api.Models.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Api.Models\bin\Debug\TaskManagement.Api.Models.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Api.Models\obj\Debug\TaskManagement.Api.Models.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Api.Models\obj\Debug\TaskManagement.Api.Models.pdb

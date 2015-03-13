@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaskManagementDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TaskManagementDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_category" EntityType="TaskManagementDBModel.Category" />
+    <EntitySet Name="tbl_priority" EntityType="TaskManagementDBModel.Priority" />
+    <EntitySet Name="tbl_status" EntityType="TaskManagementDBModel.Status" />
+    <EntitySet Name="tbl_task" EntityType="TaskManagementDBModel.Task" />
+    <EntitySet Name="tbl_TaskUser" EntityType="TaskManagementDBModel.TaskUser" />
+    <AssociationSet Name="FK__tbl_task__idPrio__6EF57B66" Association="TaskManagementDBModel.FK__tbl_task__idPrio__6EF57B66">
+      <End Role="tbl_priority" EntitySet="tbl_priority" />
+      <End Role="tbl_task" EntitySet="tbl_task" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_task__idStat__6FE99F9F" Association="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F">
+      <End Role="tbl_status" EntitySet="tbl_status" />
+      <End Role="tbl_task" EntitySet="tbl_task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaskUser_" Association="TaskManagementDBModel.FK_TaskUser_">
+      <End Role="tbl_task" EntitySet="tbl_task" />
+      <End Role="tbl_TaskUser" EntitySet="tbl_TaskUser" />
+    </AssociationSet>
+    <AssociationSet Name="tbl_TaskCategory" Association="TaskManagementDBModel.tbl_TaskCategory">
+      <End Role="tbl_category" EntitySet="tbl_category" />
+      <End Role="tbl_task" EntitySet="tbl_task" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nameCategory" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="descriptionCategory" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbl_task" Relationship="TaskManagementDBModel.tbl_TaskCategory" FromRole="tbl_category" ToRole="tbl_task" />
+  </EntityType>
+  <EntityType Name="Priority">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="namePriority" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Ordinal" Type="Int32" />
+    <NavigationProperty Name="tbl_task" Relationship="TaskManagementDBModel.FK__tbl_task__idPrio__6EF57B66" FromRole="tbl_priority" ToRole="tbl_task" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nameStatus" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Ordinal" Type="Int32" />
+    <NavigationProperty Name="tbl_task" Relationship="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F" FromRole="tbl_status" ToRole="tbl_task" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="subjectTask" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Precision="3" />
+    <Property Name="DateCompleted" Type="DateTime" Precision="3" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="idPriority" Type="Int32" />
+    <Property Name="idStatus" Type="Int32" />
+    <NavigationProperty Name="tbl_priority" Relationship="TaskManagementDBModel.FK__tbl_task__idPrio__6EF57B66" FromRole="tbl_task" ToRole="tbl_priority" />
+    <NavigationProperty Name="tbl_status" Relationship="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F" FromRole="tbl_task" ToRole="tbl_status" />
+    <NavigationProperty Name="tbl_TaskUser" Relationship="TaskManagementDBModel.FK_TaskUser_" FromRole="tbl_task" ToRole="tbl_TaskUser" />
+    <NavigationProperty Name="tbl_category" Relationship="TaskManagementDBModel.tbl_TaskCategory" FromRole="tbl_task" ToRole="tbl_category" />
+  </EntityType>
+  <EntityType Name="TaskUser">
+    <Key>
+      <PropertyRef Name="idTask" />
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idTask" Type="Int32" Nullable="false" />
+    <Property Name="idUser" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tbl_task" Relationship="TaskManagementDBModel.FK_TaskUser_" FromRole="tbl_TaskUser" ToRole="tbl_task" />
+  </EntityType>
+  <Association Name="FK__tbl_task__idPrio__6EF57B66">
+    <End Role="tbl_priority" Type="TaskManagementDBModel.Priority" Multiplicity="0..1" />
+    <End Role="tbl_task" Type="TaskManagementDBModel.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_priority">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_task">
+        <PropertyRef Name="idPriority" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_task__idStat__6FE99F9F">
+    <End Role="tbl_status" Type="TaskManagementDBModel.Status" Multiplicity="0..1" />
+    <End Role="tbl_task" Type="TaskManagementDBModel.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_task">
+        <PropertyRef Name="idStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaskUser_">
+    <End Role="tbl_task" Type="TaskManagementDBModel.Task" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_TaskUser" Type="TaskManagementDBModel.TaskUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_task">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_TaskUser">
+        <PropertyRef Name="idTask" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tbl_TaskCategory">
+    <End Role="tbl_category" Type="TaskManagementDBModel.Category" Multiplicity="*" />
+    <End Role="tbl_task" Type="TaskManagementDBModel.Task" Multiplicity="*" />
+  </Association>
+</Schema>

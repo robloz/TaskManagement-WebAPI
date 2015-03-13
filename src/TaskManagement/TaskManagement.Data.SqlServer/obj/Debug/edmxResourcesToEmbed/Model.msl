@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaskManagementDBModelStoreContainer" CdmEntityContainer="TaskManagementDBEntities">
+    <EntitySetMapping Name="tbl_category">
+      <EntityTypeMapping TypeName="TaskManagementDBModel.Category">
+        <MappingFragment StoreEntitySet="tbl_category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nameCategory" ColumnName="nameCategory" />
+          <ScalarProperty Name="descriptionCategory" ColumnName="descriptionCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_priority">
+      <EntityTypeMapping TypeName="TaskManagementDBModel.Priority">
+        <MappingFragment StoreEntitySet="tbl_priority">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namePriority" ColumnName="namePriority" />
+          <ScalarProperty Name="Ordinal" ColumnName="Ordinal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_status">
+      <EntityTypeMapping TypeName="TaskManagementDBModel.Status">
+        <MappingFragment StoreEntitySet="tbl_status">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nameStatus" ColumnName="nameStatus" />
+          <ScalarProperty Name="Ordinal" ColumnName="Ordinal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_task">
+      <EntityTypeMapping TypeName="TaskManagementDBModel.Task">
+        <MappingFragment StoreEntitySet="tbl_task">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="subjectTask" ColumnName="subjectTask" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="DateCompleted" ColumnName="DateCompleted" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="idPriority" ColumnName="idPriority" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TaskUser">
+      <EntityTypeMapping TypeName="TaskManagementDBModel.TaskUser">
+        <MappingFragment StoreEntitySet="tbl_TaskUser">
+          <ScalarProperty Name="idTask" ColumnName="idTask" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tbl_TaskCategory" TypeName="TaskManagementDBModel.tbl_TaskCategory" StoreEntitySet="tbl_TaskCategory">
+      <EndProperty Name="tbl_category">
+        <ScalarProperty Name="id" ColumnName="idCategory" />
+      </EndProperty>
+      <EndProperty Name="tbl_task">
+        <ScalarProperty Name="id" ColumnName="idTask" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

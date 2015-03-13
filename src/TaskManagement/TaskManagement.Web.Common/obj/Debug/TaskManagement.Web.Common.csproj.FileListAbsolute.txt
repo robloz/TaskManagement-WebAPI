@@ -1,0 +1,9 @@
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\TaskManagement.Web.Common.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\TaskManagement.Web.Common.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\log4net.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\Ninject.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\log4net.xml
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\bin\Debug\Ninject.xml
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\obj\Debug\TaskManagement.Web.Common.csprojResolveAssemblyReference.cache
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\obj\Debug\TaskManagement.Web.Common.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Web.Common\obj\Debug\TaskManagement.Web.Common.pdb
