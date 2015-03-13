@@ -1,0 +1,13 @@
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\KriaSoft.AspNet.Identity.Database1.dacpac
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\KriaSoft.AspNet.Identity.Database.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\KriaSoft.AspNet.Identity.Database.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\mscorlib.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\es\mscorlib.resources.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\normidna.nlp
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\normnfc.nlp
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\normnfd.nlp
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\normnfkc.nlp
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\bin\Debug\normnfkd.nlp
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\obj\Debug\KriaSoft.AspNet.Identity.Database1.sqlprojResolveAssemblyReference.cache
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\obj\Debug\KriaSoft.AspNet.Identity.Database.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\KriaSoft.AspNet.Identity.Database1\obj\Debug\KriaSoft.AspNet.Identity.Database.pdb
