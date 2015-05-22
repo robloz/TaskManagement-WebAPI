@@ -12,7 +12,7 @@ namespace TaskManagement.Web.Api.Infrastructure.Identity
     public class AppIdentityDbContext : IdentityDbContext<AppUser>
     {
 
-        public AppIdentityDbContext() : base("TaskManagementDB") { } // <--- name of connction string
+        public AppIdentityDbContext() : base("TaskManagementDBIdentity") { } // <--- name of connction string
 
         static AppIdentityDbContext()
         {

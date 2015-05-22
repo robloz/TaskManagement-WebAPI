@@ -10,3 +10,17 @@ C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\sr
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.dll
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Common.pdb
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.SqlServer.dll.config
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.SqlServer.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.SqlServer.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\EntityFramework.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Common.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Common.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Data.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\EntityFramework.xml
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\obj\Debug\TaskManagement.Data.SqlServer.csprojResolveAssemblyReference.cache
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\obj\Debug\TaskManagement.Data.SqlServer.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\obj\Debug\TaskManagement.Data.SqlServer.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Api.Models.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Data.SqlServer\bin\Debug\TaskManagement.Api.Models.pdb

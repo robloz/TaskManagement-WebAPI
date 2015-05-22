@@ -3,3 +3,8 @@ C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\sr
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\bin\Debug\TaskManagementDb.pdb
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\obj\Debug\TaskManagementDb.dll
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\obj\Debug\TaskManagementDb.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\bin\Debug\TaskManagementDb.dacpac
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\bin\Debug\TaskManagementDb.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\bin\Debug\TaskManagementDb.pdb
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\obj\Debug\TaskManagementDb.dll
+C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagementDb\obj\Debug\TaskManagementDb.pdb

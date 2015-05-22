@@ -4,15 +4,23 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TaskManagement.Common.Interface;
 
 namespace TaskManagement.Web.Api.Controllers
 {
     public class ValuesController : ApiController
     {
+        private IDateTime _time;
+
+        public ValuesController(IDateTime time)
+        {
+            _time = time;
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", _time.UtcNow.ToString() };
         }
 
         // GET api/values/5

@@ -9,6 +9,32 @@ namespace TaskManagement.Web.Api
     {
         public static void Register(HttpConfiguration config)
         {
+
+            config.Routes.MapHttpRoute(
+                name: "TaskStatusApi",
+                routeTemplate: "api/Task/{idTask}/status/{statusId}",
+                defaults: new { controller = "TaskStatus", statusId=RouteParameter.Optional }
+            );
+
+
+            config.Routes.MapHttpRoute(
+                name: "TaskPriorityApi",
+                routeTemplate: "api/Task/{idTask}/priority/",
+                defaults: new { controller = "TaskPriority" }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "TaskUserApi",
+                routeTemplate: "api/Task/{idTask}/users/",
+                defaults: new { controller = "TaskUser" }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "TaskCategoriesApi",
+                routeTemplate: "api/Task/{idTask}/category/",
+                defaults: new { controller = "TaskCategories" }
+            );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

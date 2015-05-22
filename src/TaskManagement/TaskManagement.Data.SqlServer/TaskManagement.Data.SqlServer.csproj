@@ -49,6 +49,12 @@
     <Compile Include="Category.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Concrete\EFRepository.cs" />
+    <Compile Include="Mapper\CategoryMapper.cs" />
+    <Compile Include="Mapper\PriorityMapper.cs" />
+    <Compile Include="Mapper\StatusMapper.cs" />
+    <Compile Include="Mapper\TaskMapper.cs" />
+    <Compile Include="Mapper\TaskUserMapper.cs" />
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +111,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TaskManagement.Api.Models\TaskManagement.Api.Models.csproj">
+      <Project>{276cddc3-361c-4e15-b6de-1f8edabea9d2}</Project>
+      <Name>TaskManagement.Api.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TaskManagement.Common\TaskManagement.Common.csproj">
       <Project>{9690d94d-08d3-4531-85d0-4d8899c99aeb}</Project>
       <Name>TaskManagement.Common</Name>
@@ -114,6 +124,7 @@
       <Name>TaskManagement.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
