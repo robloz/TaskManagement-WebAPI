@@ -18,11 +18,12 @@ namespace TaskManagement.Web.Api.Controllers
             _repository = repository;
         }
 
+        // /api/Task
         public IEnumerable<Task> Get()
         {
             return _repository.Tasks;
         }
-
+        // /api/Task/id
         public Task Get(int id)
         {
 
@@ -42,6 +43,20 @@ namespace TaskManagement.Web.Api.Controllers
 
             return task;
 
+        }
+
+        public HttpResponseMessage Post(HttpRequestMessage request, Task task)
+        {
+
+            var t = _repository.Save(task);
+
+            var response = request.CreateResponse(HttpStatusCode.Created, task);
+            response.Headers.Add("Location",
+                _repository.Categories.SingleOrDefault(x => x.Id == t.Id)
+                    .Links.First(x => x.Rel == "self").Href
+            );
+
+            return response;
         }
 
     }

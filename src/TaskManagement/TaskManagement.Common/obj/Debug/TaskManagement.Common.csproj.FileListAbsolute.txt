@@ -5,6 +5,5 @@ C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\sr
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\obj\Debug\TaskManagement.Common.pdb
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\bin\Debug\TaskManagement.Common.dll
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\bin\Debug\TaskManagement.Common.pdb
-C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\obj\Debug\TaskManagement.Common.csprojResolveAssemblyReference.cache
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\obj\Debug\TaskManagement.Common.dll
 C:\Users\jp\Desktop\Roberto\programación\TaskManagement\Nueva carpeta\TaskManagementWebAPI\src\TaskManagement\TaskManagement.Common\obj\Debug\TaskManagement.Common.pdb

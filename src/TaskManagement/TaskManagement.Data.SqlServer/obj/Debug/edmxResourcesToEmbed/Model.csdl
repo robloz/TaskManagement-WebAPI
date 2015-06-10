@@ -66,6 +66,8 @@
     <NavigationProperty Name="tbl_status" Relationship="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F" FromRole="tbl_task" ToRole="tbl_status" />
     <NavigationProperty Name="tbl_TaskUser" Relationship="TaskManagementDBModel.FK_TaskUser_" FromRole="tbl_task" ToRole="tbl_TaskUser" />
     <NavigationProperty Name="tbl_category" Relationship="TaskManagementDBModel.tbl_TaskCategory" FromRole="tbl_task" ToRole="tbl_category" />
+    <Property Type="String" Name="isUser" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="place" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TaskUser">
     <Key>

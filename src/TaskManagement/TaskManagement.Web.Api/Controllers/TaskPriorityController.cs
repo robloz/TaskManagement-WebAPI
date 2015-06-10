@@ -39,5 +39,29 @@ namespace TaskManagement.Web.Api.Controllers
 
             return task.Priority;
         }
+
+        public void Put(int idTask, int idPriority)
+        {
+            Task task = _repository.Tasks.SingleOrDefault(x => x.Id == idTask);
+
+            if (task == null)
+            {
+                throw new HttpResponseException(
+
+                    new HttpResponseMessage
+                    {
+                        StatusCode = HttpStatusCode.NotFound,
+                        ReasonPhrase = String.Format("Priority {0} not found", idTask)
+                    }
+                    );
+            }
+
+            task.Priority = _repository.Priorities.FirstOrDefault(x => x.Id == idPriority);
+
+
+        }
+
+
+
     }
 }

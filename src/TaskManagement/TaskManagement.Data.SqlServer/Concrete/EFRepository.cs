@@ -72,6 +72,19 @@ namespace TaskManagement.Data.SqlServer.Concrete
 
         }
 
+        public TaskManagement.Api.Models.Task Save(TaskManagement.Api.Models.Task task)
+        {
+
+            var tas = TaskMapper.CreateTask(task);
+
+            context.tbl_task.Add(tas);
+
+            context.SaveChanges();
+
+            // return the insert element with the right id
+            return TaskMapper.CreateTask(tas);
+        }
+
         public void DeleteCategory(int id)
         {
 

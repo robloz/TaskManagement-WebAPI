@@ -38,16 +38,14 @@ namespace TaskManagement.Web.Api.Controllers
         public HomeController(IDateTime time)
         {
             _time = time;
-            /*
-            UserManager.Create(new AppUser { UserName = "jose", nickname="jose" }, "11111dad");
-            UserManager.Create(new AppUser { UserName = "juan", nickname="juan" }, "11111dad");
-             * */
         }
 
         public ActionResult Index()
         {
-
-
+            /*
+            UserManager.Create(new AppUser { UserName = "jose", nickname = "jose" }, "11111dad");
+            UserManager.Create(new AppUser { UserName = "juan", nickname = "juan" }, "11111dad");
+             * */
             AppUser user = UserManager.FindByName(HttpContext.User.Identity.Name);
             
             DateTime d =_time.UtcNow;

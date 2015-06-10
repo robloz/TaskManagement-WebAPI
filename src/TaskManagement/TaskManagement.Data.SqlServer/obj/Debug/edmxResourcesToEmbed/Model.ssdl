@@ -7,11 +7,11 @@
     <EntitySet Name="tbl_task" EntityType="TaskManagementDBModel.Store.tbl_task" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbl_TaskCategory" EntityType="TaskManagementDBModel.Store.tbl_TaskCategory" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbl_TaskUser" EntityType="TaskManagementDBModel.Store.tbl_TaskUser" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK__tbl_task__idPrio__6EF57B66" Association="TaskManagementDBModel.Store.FK__tbl_task__idPrio__6EF57B66">
+    <AssociationSet Name="FK__tbl_task__idPrio__531856C7" Association="TaskManagementDBModel.Store.FK__tbl_task__idPrio__531856C7">
       <End Role="tbl_priority" EntitySet="tbl_priority" />
       <End Role="tbl_task" EntitySet="tbl_task" />
     </AssociationSet>
-    <AssociationSet Name="FK__tbl_task__idStat__6FE99F9F" Association="TaskManagementDBModel.Store.FK__tbl_task__idStat__6FE99F9F">
+    <AssociationSet Name="FK__tbl_task__idStat__540C7B00" Association="TaskManagementDBModel.Store.FK__tbl_task__idStat__540C7B00">
       <End Role="tbl_status" EntitySet="tbl_status" />
       <End Role="tbl_task" EntitySet="tbl_task" />
     </AssociationSet>
@@ -64,6 +64,8 @@
     <Property Name="CreateDate" Type="datetime" />
     <Property Name="idPriority" Type="int" />
     <Property Name="idStatus" Type="int" />
+    <Property Name="isUser" Type="nvarchar" MaxLength="128" />
+    <Property Name="place" Type="varchar(max)" />
   </EntityType>
   <EntityType Name="tbl_TaskCategory">
     <Key>
@@ -81,7 +83,7 @@
     <Property Name="idTask" Type="int" Nullable="false" />
     <Property Name="idUser" Type="nvarchar" Nullable="false" MaxLength="128" />
   </EntityType>
-  <Association Name="FK__tbl_task__idPrio__6EF57B66">
+  <Association Name="FK__tbl_task__idPrio__531856C7">
     <End Role="tbl_priority" Type="TaskManagementDBModel.Store.tbl_priority" Multiplicity="0..1" />
     <End Role="tbl_task" Type="TaskManagementDBModel.Store.tbl_task" Multiplicity="*" />
     <ReferentialConstraint>
@@ -93,7 +95,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__tbl_task__idStat__6FE99F9F">
+  <Association Name="FK__tbl_task__idStat__540C7B00">
     <End Role="tbl_status" Type="TaskManagementDBModel.Store.tbl_status" Multiplicity="0..1" />
     <End Role="tbl_task" Type="TaskManagementDBModel.Store.tbl_task" Multiplicity="*" />
     <ReferentialConstraint>

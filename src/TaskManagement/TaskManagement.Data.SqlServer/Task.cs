@@ -28,6 +28,8 @@ namespace TaskManagement.Data.SqlServer
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<int> idPriority { get; set; }
         public Nullable<int> idStatus { get; set; }
+        public string isUser { get; set; }
+        public string place { get; set; }
     
         public virtual Priority tbl_priority { get; set; }
         public virtual Status tbl_status { get; set; }

@@ -23,8 +23,17 @@ namespace TaskManagement.Data.SqlServer.Mapper
                 }
                }
             };
+        }
 
+        public static TaskManagement.Data.SqlServer.Priority CreatePriority(TaskManagement.Api.Models.Priority priority)
+        {
+            return new TaskManagement.Data.SqlServer.Priority
+            {
+                id = priority.Id,
+                namePriority = priority.NamePriority,
+                Ordinal = priority.Ordinal
 
+            };
         }
     }
 }

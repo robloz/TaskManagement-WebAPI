@@ -27,6 +27,10 @@ namespace TaskManagement.Web.Api.Infrastructure.Identity
             }
         }
 
+        public IEnumerable<AppUser> Users {
+            get { return UserManager.Users; } 
+        }
+
         public string GetCurrentUser
         {
             get { return HttpContext.Current.User.Identity.Name; }

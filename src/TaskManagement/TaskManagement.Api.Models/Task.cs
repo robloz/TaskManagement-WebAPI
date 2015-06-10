@@ -21,6 +21,7 @@ namespace TaskManagement.Api.Models
         public Nullable<System.DateTime> DueDate { get; set; }
         public Nullable<System.DateTime> DateCompleted { get; set; }
         public Nullable<System.DateTime> CreateDate { get; set; }
+        public string Place { get; set; }
         public Priority Priority { get; set; }
         public Status Status { get; set; }
 

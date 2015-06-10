@@ -10,9 +10,11 @@ namespace TaskManagement.Web.Api.Infrastructure.Identity
     {
         string GetCurrentUser { get; }
         int GetCurrentUserId { get; }
+        IEnumerable<AppUser> Users { get; }
 
         Task<Infrastructure.Identity.AppUser> FindByNameAsync(string name);
         Task<Infrastructure.Identity.AppUser> FindByIdAsync(string id);
 
+        
     }
 }

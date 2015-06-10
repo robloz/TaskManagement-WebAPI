@@ -23,7 +23,7 @@ namespace TaskManagement.Data.SqlServer.Mapper
                 StartDate = task.StartDate,
                 Status = StatusMapper.CreateStatus( task.tbl_status ),
                 SubjectTask = task.subjectTask,
-
+                Place = task.place,
                 Categories = ((IEnumerable<TaskManagement.Data.SqlServer.Category>)task.tbl_category)
                                 .Select(CategoryMapper.CreateCategory)
                                 .ToList(),
@@ -40,5 +40,27 @@ namespace TaskManagement.Data.SqlServer.Mapper
 
 
         }
+
+        public static TaskManagement.Data.SqlServer.Task CreateTask(TaskManagement.Api.Models.Task task)
+        {
+
+            return new TaskManagement.Data.SqlServer.Task
+            {
+                CreateDate = task.CreateDate,
+                DateCompleted = task.DateCompleted,
+                DueDate = task.DueDate,
+                id = task.Id,
+                idPriority = task.Priority.Id,
+                idStatus = task.Status.Id,
+                place = task.Place,
+                StartDate = task.StartDate,
+                subjectTask = task.SubjectTask,
+                tbl_category = task.Categories.Select(CategoryMapper.CreateCategory).ToList(),
+                tbl_priority = PriorityMapper.CreatePriority(task.Priority),
+                tbl_status = StatusMapper.CreateStatus(task.Status)
+            };
+
+        }
+
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TaskManagementDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TaskManagementDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="TaskManagementDBModelStoreContainer">
           <EntitySet Name="tbl_category" EntityType="TaskManagementDBModel.Store.tbl_category" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbl_priority" EntityType="TaskManagementDBModel.Store.tbl_priority" store:Type="Tables" Schema="dbo" />
@@ -12,11 +12,11 @@
           <EntitySet Name="tbl_task" EntityType="TaskManagementDBModel.Store.tbl_task" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbl_TaskCategory" EntityType="TaskManagementDBModel.Store.tbl_TaskCategory" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbl_TaskUser" EntityType="TaskManagementDBModel.Store.tbl_TaskUser" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK__tbl_task__idPrio__6EF57B66" Association="TaskManagementDBModel.Store.FK__tbl_task__idPrio__6EF57B66">
+          <AssociationSet Name="FK__tbl_task__idPrio__531856C7" Association="TaskManagementDBModel.Store.FK__tbl_task__idPrio__531856C7">
             <End Role="tbl_priority" EntitySet="tbl_priority" />
             <End Role="tbl_task" EntitySet="tbl_task" />
           </AssociationSet>
-          <AssociationSet Name="FK__tbl_task__idStat__6FE99F9F" Association="TaskManagementDBModel.Store.FK__tbl_task__idStat__6FE99F9F">
+          <AssociationSet Name="FK__tbl_task__idStat__540C7B00" Association="TaskManagementDBModel.Store.FK__tbl_task__idStat__540C7B00">
             <End Role="tbl_status" EntitySet="tbl_status" />
             <End Role="tbl_task" EntitySet="tbl_task" />
           </AssociationSet>
@@ -69,6 +69,8 @@
           <Property Name="CreateDate" Type="datetime" />
           <Property Name="idPriority" Type="int" />
           <Property Name="idStatus" Type="int" />
+          <Property Name="isUser" Type="nvarchar" MaxLength="128" />
+          <Property Name="place" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="tbl_TaskCategory">
           <Key>
@@ -86,7 +88,7 @@
           <Property Name="idTask" Type="int" Nullable="false" />
           <Property Name="idUser" Type="nvarchar" Nullable="false" MaxLength="128" />
         </EntityType>
-        <Association Name="FK__tbl_task__idPrio__6EF57B66">
+        <Association Name="FK__tbl_task__idPrio__531856C7">
           <End Role="tbl_priority" Type="TaskManagementDBModel.Store.tbl_priority" Multiplicity="0..1" />
           <End Role="tbl_task" Type="TaskManagementDBModel.Store.tbl_task" Multiplicity="*" />
           <ReferentialConstraint>
@@ -98,7 +100,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tbl_task__idStat__6FE99F9F">
+        <Association Name="FK__tbl_task__idStat__540C7B00">
           <End Role="tbl_status" Type="TaskManagementDBModel.Store.tbl_status" Multiplicity="0..1" />
           <End Role="tbl_task" Type="TaskManagementDBModel.Store.tbl_task" Multiplicity="*" />
           <ReferentialConstraint>
@@ -152,8 +154,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TaskManagementDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -223,6 +224,8 @@
           <NavigationProperty Name="tbl_status" Relationship="TaskManagementDBModel.FK__tbl_task__idStat__6FE99F9F" FromRole="tbl_task" ToRole="tbl_status" />
           <NavigationProperty Name="tbl_TaskUser" Relationship="TaskManagementDBModel.FK_TaskUser_" FromRole="tbl_task" ToRole="tbl_TaskUser" />
           <NavigationProperty Name="tbl_category" Relationship="TaskManagementDBModel.tbl_TaskCategory" FromRole="tbl_task" ToRole="tbl_category" />
+          <Property Type="String" Name="isUser" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="place" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TaskUser">
           <Key>
@@ -311,6 +314,8 @@
           <EntitySetMapping Name="tbl_task">
             <EntityTypeMapping TypeName="TaskManagementDBModel.Task">
               <MappingFragment StoreEntitySet="tbl_task">
+                <ScalarProperty Name="place" ColumnName="place" />
+                <ScalarProperty Name="isUser" ColumnName="isUser" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="subjectTask" ColumnName="subjectTask" />
                 <ScalarProperty Name="StartDate" ColumnName="StartDate" />

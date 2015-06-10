@@ -6,19 +6,22 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
 </head>
 <body>
     <header>
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a href="~/">ASP.NET Web API</a></p>
+                    <a href="~/">Task Managment Client</a></p>
             </div>
             <div class="float-right">
                 <nav>
                     <ul id="menu">
-                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                        <li><a href="javascript:void(0);" onclick="LoadTasks()">Tasks</a></li>
+                        <li><a href="javascript:void(0);" onclick="LoadUsers()">Users</a></li>
+                        <li><a href="javascript:void(0);" onclick="LoadPriorities()">Priorities</a></li>
+                        <li><a href="javascript:void(0);" onclick="LoadCategories()">Categories</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,6 +30,7 @@
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/main.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

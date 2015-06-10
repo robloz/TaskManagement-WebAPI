@@ -31,6 +31,8 @@
     <EntitySetMapping Name="tbl_task">
       <EntityTypeMapping TypeName="TaskManagementDBModel.Task">
         <MappingFragment StoreEntitySet="tbl_task">
+          <ScalarProperty Name="place" ColumnName="place" />
+          <ScalarProperty Name="isUser" ColumnName="isUser" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="subjectTask" ColumnName="subjectTask" />
           <ScalarProperty Name="StartDate" ColumnName="StartDate" />

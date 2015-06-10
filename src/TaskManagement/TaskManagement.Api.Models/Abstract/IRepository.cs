@@ -15,6 +15,7 @@ namespace TaskManagement.Api.Models.Abstract
         IEnumerable<TaskManagement.Api.Models.TaskUser> TasksUsers { get; }
 
         TaskManagement.Api.Models.Category Save(TaskManagement.Api.Models.Category category);
+        TaskManagement.Api.Models.Task Save(TaskManagement.Api.Models.Task task);
         void DeleteCategory(int id);
     }
 }

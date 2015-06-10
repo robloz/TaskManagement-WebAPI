@@ -18,5 +18,15 @@ namespace TaskManagement.Data.SqlServer.Mapper
 
 
             }
+     public static TaskManagement.Data.SqlServer.TaskUser CreateTask(TaskManagement.Api.Models.TaskUser task)
+     {
+         return new TaskManagement.Data.SqlServer.TaskUser
+         {
+             idTask = task.idTask,
+             idUser = task.idUser,
+         };
+
+
+     }
     }
 }

@@ -23,8 +23,17 @@ namespace TaskManagement.Data.SqlServer.Mapper
                 }
                }
             };
+        }
 
 
+        public static TaskManagement.Data.SqlServer.Status CreateStatus(TaskManagement.Api.Models.Status status)
+        {
+            return new TaskManagement.Data.SqlServer.Status
+            {
+                id = status.Id,
+                nameStatus = status.NameStatus,
+                Ordinal = status.Ordinal
+            };
         }
     }
 }

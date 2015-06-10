@@ -60,12 +60,12 @@
     <Folder Include="dbo\User Defined Types\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\tbl_category.sql" />
-    <Build Include="dbo\Tables\tbl_priority.sql" />
-    <Build Include="dbo\Tables\tbl_status.sql" />
-    <Build Include="dbo\Tables\tbl_task.sql" />
-    <Build Include="dbo\Tables\tbl_TaskCategory.sql" />
-    <Build Include="dbo\Tables\tbl_TaskUser.sql" />
+    <None Include="dbo\Tables\tbl_category.sql" />
+    <None Include="dbo\Tables\tbl_priority.sql" />
+    <None Include="dbo\Tables\tbl_status.sql" />
+    <None Include="dbo\Tables\tbl_task.sql" />
+    <None Include="dbo\Tables\tbl_TaskCategory.sql" />
+    <None Include="dbo\Tables\tbl_TaskUser.sql" />
     <None Include="dbo\Create.sql" />
   </ItemGroup>
 </Project>
